@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        /* Universal selector */
+        *{box-sizing: border-box;
+          padding: 0; margin:0 ;}
+
+          body{background-color:#2aa562b3;}
+
+        .one{
+            background-color: rgb(75, 153, 170);
+            border:3px solid rgb(242, 8, 211);
+             padding: 20px;
+             margin: 34px;
+             border-radius: 23px;
+             width: 533px;
+             box-sizing: border-box;
+
+            /* padding can be written in differnt forms */
+
+             /* we can set top,bottom,right,left like this in padding */
+            /* padding-top : 79px; */
+            /* padding-bottom: 79px; */
+            /* padding-right: 34px; */
+            /* padding-left: 79px; */
+
+            /* padding = top,right,bottom,left;(TRBL shortform) */
+            /* padding: 23px 25px 28px 18px; */
+
+            /* padding: y(top/bottom) x(left/right); */
+            /* padding: 34px 19px; */
+
+            /* we can set top,bottom,right,left like this in margin */
+            /* margin-top: 43px; */
+            /* margin-bottom:34px ; */
+            /* margin-left:25px ; */
+            /* margin-right:30px ; */
+        }
+    </style>
+</head>
+<body>
+    <div class="one">
+        <h3>My name is Vishal</h3>
+        <p class="two">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur laborum totam voluptatibus recusandae dolorem odio accusantium provident maiores rerum, est veritatis mollitia modi architecto explicabo sint maxime fuga suscipit ipsam!</p>
+    </div>
+
+    <div class="one">
+        <h3>My name is Ajay</h3>
+        <p class="three">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur laborum totam voluptatibus recusandae dolorem odio accusantium provident maiores rerum, est veritatis mollitia modi architecto explicabo sint maxime fuga suscipit ipsam!</p>
+    </div>
+
+    <div class="one">
+        <h3>My name is Raju</h3>
+        <p class="four">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur laborum totam voluptatibus recusandae dolorem odio accusantium provident maiores rerum, est veritatis mollitia modi architecto explicabo sint maxime fuga suscipit ipsam!</p>
+    </div>
+</body>
+</html>

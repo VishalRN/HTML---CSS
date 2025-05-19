@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alignment in CSS</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+        }
+
+        .Container {
+            border: 3px solid rgb(243, 7, 243);
+            width: 900px;
+            margin: auto;
+            background-color: rgb(226, 135, 14);
+        }
+
+        .Item {
+            border: 2px solid green;
+            padding: 12px;
+            margin: 12px;
+            background: blanchedalmond;
+        }
+
+        #Fruits {
+            float: right;
+            width: 47%;
+        }
+
+        #Book {
+            float: left;
+            width: 47%;
+        }
+
+        #Snacks {
+            /* float: left; */
+            clear: both;
+            width: 97%;
+        }
+
+        p,
+        h3 {
+            /* text-align: center; */
+            /* text-align: left; */
+            /* text-align: center; */
+            text-align: justify;
+        }
+
+        h1 {
+            margin: auto;
+            width: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="Container">
+        <h1>Welcome to my Store</h1>
+        <div id="Fruits" class="Item">
+            <h3>Fruits</h3>
+            <p id="FruitsStall" class="Stall">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid similique
+                omnis minima et aliquam eaque, temporibus rerum sunt suscipit inventore cupiditate ratione dicta
+                voluptatum cumque veritatis, amet fuga provident! Ipsum.</p>
+        </div>
+
+        <div id="Book" class="Item">
+            <h3>Books</h3>
+            <p id="BookStall" class="Stall">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid similique
+                omnis minima et aliquam eaque, temporibus rerum sunt suscipit inventore cupiditate ratione dicta
+                voluptatum cumque veritatis, amet fuga provident! Ipsum.</p>
+        </div>
+
+        <div id="Snacks" class="Item">
+            <h3>Snacks</h3>
+            <p id="SnacksStall" class="Stall">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid similique
+                omnis minima et aliquam eaque, temporibus rerum sunt suscipit inventore cupiditate ratione dicta
+                voluptatum cumque veritatis, amet fuga provident! Ipsum.</p>
+
+        </div>
+
+        <div id="Glasses" class="Item">
+            <h3>Glasses</h3>
+            <p id="Glasses" class="Stall">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid similique
+                omnis minima et aliquam eaque, temporibus rerum sunt suscipit inventore cupiditate ratione dicta
+                voluptatum cumque veritatis, amet fuga provident! Ipsum.</p>
+        </div>
+
+    </div>
+</body>
+
+</html>
