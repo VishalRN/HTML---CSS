@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <style>
+        .container {
+            border: 3px solid greenyellow;
+            background-color: aqua;
+
+            /* for fixed and sticky position */
+            /* height: 3444px; */
+        }
+
+        .box {
+            border: 3px solid red;
+            width: 350px;
+            height: 150px;
+            margin: 5px;
+            display: inline-block;
+        }
+
+        /* position = static(default),absolute,relative,fixed,sticky */
+        #box3 {
+            /* relative: Positions the element relative to its normal positon and will leave a gap at its normal position*/
+            /* position: relative;
+            top: 34px;
+            left: 30px; */
+
+            /* absolute: Positions the element relative to the positon of its first parent*/
+            /* position: absolute;
+            top: 34px;
+            left: 30px; */
+
+            /* fixed: Positions the element relative to the browser window; */
+            /* position: fixed;
+            right: 4px;
+            bottom: 2px */
+
+            /* sticky: Positions the element relative to the users scroll position */
+            position: sticky;
+            top: 3px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 25 - Position -->
+    <h3>25 - Position</h3>
+    <div class="container">
+        <div id="box1" class="box"></div>
+        <div id="box2" class="box"></div>
+        <div id="box3" class="box">Chat With Us</div>
+        <div id="box4" class="box"></div>
+    </div>
+</body>
+
+</html>

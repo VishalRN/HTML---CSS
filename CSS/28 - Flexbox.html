@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        .container {
+            height: 544px;
+            width: 100%;
+            border: 2px solid hotpink;
+
+            /* Intialization of a Flex Box */
+            display: flex;
+
+            /* Flex properties for flex container */
+
+            /* Default value of flex-direction is row */
+            /* flex-direction: row; */
+            flex-direction: column;
+            /* flex-direction: column-reverse; */
+            /* flex-direction: row-reverse; */
+
+
+            /* Default value of flex wrap is no wrap*/
+            /* flex-wrap: no wrap; */
+            /* flex-wrap: wrap; */
+            /* flex-wrap: wrap-reverse; */
+
+
+            /* Both flex direction and flex wrap in one line first direction then wrap */
+            /* flex-flow: column-reverse wrap; */
+
+
+            /* justify-content will justify the content in horizontal direction */
+            /* justify-content: center; */
+            /* justify-content: space-between; */
+            /* justify-content: space-evenly; */
+            /* justify-content: space-around; */
+
+
+            /* justify-content will justify the content in vertical direction */
+            /* align-items: flex-start; */
+            /* align-items: flex-end; */
+            /* align-items: center; */
+            /* align-items: stretch; */
+        }
+
+        .item {
+            background-color: tomato;
+            border: 2px solid rgb(28, 5, 231);
+            padding: 3px;
+            height: 100px;
+            margin: 10px;
+            width: 200px;
+        }
+
+
+        /* Flex properties for flex item */
+        #item-1 {
+            /* Higher the order, later it shows up in the container */
+            /* order: 2; */
+
+            /* negative number cannot be given in the flex grow element inted of negative number we can use felx shrink */
+            /* flex-grow: 2; */
+            flex-shrink: 3;
+        }
+
+        #item-2 {
+            /* order: 5; */
+            /* flex-grow: 3; */
+            /* flex-shrink: 2; */
+            flex-basis: 160px;
+            /* when flex-direction is set to row flex-basis: will control width */
+            /* when flex-direction is set to column flex-basis: will control height */
+        }
+
+        #item-3 {
+            /* order: 1; */
+
+            /* flex grow,flex shrink,flex basis can be written in one line first grow then shrink,basis */
+            flex: 2 2 300px;
+            /* align-self: start; */
+            /* align-self: end; */
+            align-self: center;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 28 - Flexbox -->
+    <h3>28 - Flexbox</h3>
+
+    <div class="container">
+        <div id="item-1" class="item">First Box</div>
+        <div id="item-2" class="item">Second Box</div>
+        <div id="item-3" class="item">Third Box</div>
+
+        <!-- only for flex properties for flex items -->
+        <!-- <div id="item-4" class="item">Fourth Box</div> -->
+        <!-- <div id="item-5" class="item">Fifth Box</div> -->
+        <!-- <div id="item-6" class="item">Sixth Box</div> -->
+
+    </div>
+</body>
+
+</html>
