@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>30 - Media Queries</title>
+  </head>
+  <style>
+    .box {
+      text-align: center;
+      font-size: 25px;
+      background-color: red;
+      color: rgb(255, 254, 254);
+      display: none;
+    }
+
+    @media only screen and (max-width: 300px) {
+      #blackbox-1 {
+        display: block;
+        background-color: cyan;
+      }
+    }
+
+    @media only screen and (min-width: 300px) and (max-width: 500px) {
+      #blackbox-2 {
+        display: block;
+        background-color: blueviolet;
+      }
+    }
+
+    @media (min-width: 500px) and (max-width: 800px) {
+      #blackbox-3 {
+        display: block;
+        color: black;
+        background-color: yellow;
+      }
+    }
+
+    @media (min-width: 800px) {
+      #blackbox-4 {
+        display: block;
+        background-color: green;
+      }
+    }
+  </style>
+
+  <body>
+    <!-- 30 - Media Queries-->
+    <h3>30 - Media Queries</h3>
+    <div id="blackbox-1" class="box">My Name is Vishal</div>
+    <div id="blackbox-2" class="box">My age is 20</div>
+    <div id="blackbox-3" class="box">My Name is Ajay</div>
+    <div id="blackbox-4" class="box">My age is 28</div>
+  </body>
+</html>
