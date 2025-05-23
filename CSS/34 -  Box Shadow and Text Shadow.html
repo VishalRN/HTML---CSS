@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>34 - Box Shadow and Text Shadow</title>
+    <style>
+        .container {
+            display: flex;
+        }
+
+        .card {
+            padding: 23px;
+            margin: 23px 12px;
+            /* border: 2px solid red; */
+
+            /* box-shadow: offset-x offset-y color; */
+            /* box-shadow: offset-x offset-y blur-radius color; */
+            /* box-shadow: offset-x offset-y blur-radius spread-radius color; */
+            background-color: aqua;
+            box-shadow: 10px 12px greenyellow;
+            box-shadow: -10px -12px greenyellow;
+            box-shadow: 10px 12px 10px greenyellow;
+            box-shadow: 10px 12px 10px 34px greenyellow;
+            box-shadow: 10px 12px 10px 34px rgb(108, 9, 239,0.8);
+            box-shadow: inset 3px 5px greenyellow;
+            box-shadow: 3px 5px green, 4px 6px red;
+        }
+
+        .card h2{
+            text-shadow: 3px 4px rgb(250, 249, 249);
+            text-shadow: 3px 4px 2px rgb(250, 249, 249);
+            text-shadow: -3px -4px 2px rgb(250, 249, 249);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 34 - Box Shadow and Text Shadow -->
+    <h3>34 - Box Shadow and Text Shadow</h3>
+    <div class="container">
+        <div class="card" id="car1">
+            <h2>Card1</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil nostrum culpa eveniet nisi hic eos,
+                aliquid voluptatibus et nemo, rem reiciendis. Dolorem, iure earum repellendus sunt corporis aut veniam
+                enim!</p>
+        </div>
+        <div class="card" id="car2">
+            <h2>Card2</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil nostrum culpa eveniet nisi hic eos,
+                aliquid voluptatibus et nemo, rem reiciendis. Dolorem, iure earum repellendus sunt corporis aut veniam
+                enim!</p>
+        </div>
+        <div class="card" id="car3">
+            <h2>Card3</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil nostrum culpa eveniet nisi hic eos,
+                aliquid voluptatibus et nemo, rem reiciendis. Dolorem, iure earum repellendus sunt corporis aut veniam
+                enim!</p>
+        </div>
+
+    </div>
+</body>
+
+</html>
