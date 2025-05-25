@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>38 - Transfrom Property</title>
+    <style>
+      * {
+        padding: 0px;
+        margin: 0px;
+      }
+
+      .container {
+        align-items: center;
+        justify-content: center;
+        background-color: blueviolet;
+        display: flex;
+        height: 80vh;
+      }
+
+      .box {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        background-color: antiquewhite;
+        border: 3px solid red;
+        height: 400px;
+        width: 400px;
+        transition: all 1s ease-in-out;
+      }
+      .box:hover {
+        transform: rotate(45deg);
+        transform: skew(40deg);
+        transform: scale(2);
+        transform: translateX(123px);
+        transform: translateY(123px);
+        transform: translate(123px, 123px);
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- 38 - Transfrom Property -->
+    <h3>38 - Transfrom Property</h3>
+
+    <div class="container">
+      <div class="box">My name is Vishal</div>
+    </div>
+  </body>
+</html>

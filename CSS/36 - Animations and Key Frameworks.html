@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>36 - Animations and Key Frameworks</title>
+    <style>
+      .container {
+        background-color: aquamarine;
+      }
+
+      .box {
+        background-color: aqua;
+        width: 250px;
+        height: 250px;
+        position: relative;
+        animation-name: vishal1;
+        animation-name: vishal2;
+        animation-duration: 2s;
+        animation-iteration-count: 3;
+        /* animation-fill-mode: forwards;
+            animation-timing-function: ease-in;
+            animation-delay: 3s;
+            animation-direction: reverse; */
+
+        /* These properties can be set using this shorthand */
+        /* animation: animation-name animation-duration animation-timing-function animation-delay animation-iteration-count animation-fill-mode; */
+        /* animation: harry 5s ease-in 1s 12 backwards; */
+      }
+
+      @keyframes vishal1 {
+        from {
+          width: 200px;
+        }
+
+        to {
+          width: 1400px;
+        }
+      }
+
+      @keyframes vishal2 {
+        0% {
+          top: 0px;
+          left: 0px;
+        }
+
+        25% {
+          top: 250px;
+          left: 0px;
+        }
+
+        50% {
+          top: 250px;
+          left: 250px;
+        }
+
+        100% {
+          top: 0px;
+          left: 250px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- 36 - Animations and Key Frameworks -->
+    <h3>36 - Animations and Key Frameworks</h3>
+
+    <div class="container">
+      <div class="box">My name is Vishal</div>
+    </div>
+  </body>
+</html>
