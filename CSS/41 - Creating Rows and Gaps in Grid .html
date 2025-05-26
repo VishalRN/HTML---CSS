@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>41 - Creating Rows and Gaps in Grid</title>
+    <style>
+        .grid {
+            display: grid;
+            grid-template-rows: 1fr 1fr 4fr;
+            grid-auto-rows: 3fr;
+            grid-template-columns: 1fr 4fr 2fr;
+            grid-gap: 2rem;
+            grid-template-columns: repeat(4, 2fr);
+        }
+
+        .box {
+            border: 2px solid red;
+            background-color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 41 - Creating Rows & Gaps in Grid -->
+    <h3>41 - Creating Rows & Gaps in Grid</h3>
+    <div class="grid">
+        <div class="box">This is Vishal-1</div>
+        <div class="box">This is Vishal-2</div>
+        <div class="box">This is Vishal-3</div>
+        <div class="box">This is Vishal-4</div>
+        <div class="box">This is Vishal-5</div>
+        <div class="box">This is Vishal-6</div>
+        <div class="box">This is Vishal-7</div>
+        <div class="box">This is Vishal-8</div>
+        <div class="box">This is Vishal-9</div>
+        <div class="box">This is Vishal-10</div>
+    </div>
+</body>
+
+</html>
