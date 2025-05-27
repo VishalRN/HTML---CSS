@@ -1,0 +1,15 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+
+.background{
+    width: 100%;
+    height: 100vh;
+    background:url('https://cdn.pixabay.com/photo/2018/06/29/22/45/wheat-3506758_1280.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
